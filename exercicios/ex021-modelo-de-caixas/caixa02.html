@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+        }
+
+        nav > a {
+            background-color: #808080;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px;
+            margin: 3px;
+            box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: #ffffff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 20px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin-bottom: 25px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 7px #0000009f;
+        }
+
+        article > aside {
+            background-color: #b3b3b3;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        aside > p {
+            margin: 0px;
+        }
+
+        footer {
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            text-transform: uppercase;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            background-color: #ffffff;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <h2>Esportes, Política e Tecnológia</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore repudiandae corporis repellat! Asperiores, iste distinctio. Nulla deserunt velit totam deleniti temporibus, doloribus laudantium sit. Minus quas culpa excepturi quia iste!</p>
+        </section>
+        <section id="noticias"> 
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium vero debitis aperiam quos accusantium maiores explicabo unde quia ut accusamus vitae eveniet temporibus eum blanditiis porro in, officia sint laudantium?</p>
+                <aside>
+                    <p>Artigo escrito por José Wanderson</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo &copy;Wanderson</p>
+    </footer>
+    <div id="bola"><h1>W</h1></div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF8";
+
+body {
+    background-color: #000000e8;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #000000be;
+    width: 50%;
+    padding: 0 5em 2em 5em;
+    border-radius: 30px 100px;
+}
+
+.foto {
+    width: 42%;
+    margin: .5em;
+    border: .2em solid #ffffff;
+    border-radius: .5em;
+    transition: all .3s ease-in;
+}
+
+.foto:hover {
+    transform: scale(1.1);
+}

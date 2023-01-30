@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+        SELETORES PERSONALIZADOS.
+
+        #  =  id
+        .  =  class
+        :  =  pseudo-class
+        :: =  pseudo-element
+        >  =  children
+ 
+        */
+
+        
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #ff0000;
+            margin: .5em;
+            text-decoration: none;
+        }
+
+        /*Link visitado irá ficar com outra cor.*/
+        a:visited {
+            color: #aa0000;
+        }
+
+        /*Quando passar o mouse por cima a cor irá mudar para azul e o underline irá aparecer.*/
+        a:hover {
+            text-decoration: underline;
+            color: #0004ff;
+        }
+
+        /*Quando clicar no link a cor irá mudar para verde.*/
+        a:active {
+            color: #01fc2b;
+        }
+
+        .especial {
+            background-color: #ff8888;
+        }
+
+        /*Pseudo elemento altera o conteúdo periferico. Exemplo*/
+        a::before {
+            content: '⇒ ';
+        }
+
+        a::after {
+            content: ' ⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com" target="_blank" rel="external, noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com" target="_blank" rel="external, noopener" class="especial">Instagram</a></li>
+        <li><a href="https://www.twitter.com" target="_blank" rel="external, noopener" class="especial">Twitter</a></li>
+    </ul>
+</body>
+</html>

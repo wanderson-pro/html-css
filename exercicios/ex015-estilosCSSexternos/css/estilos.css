@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    background-color: #faedcd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    background-color: #ccd5ae;
+    color: #fefae0;
+}
+h2 {
+    color: #ccd5ae;
+}
+p {
+    text-indent: 50px;
+    text-align: justify;
+}
+#indent {
+    margin-left: -50px;
+}

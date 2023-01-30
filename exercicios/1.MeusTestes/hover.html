@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+        div {
+            width: 16em;
+        }
+
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        #button {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1em;
+            padding: 1em 11em 1em 11em;
+            border: solid .1em black;
+            border-radius: .5em;
+        }
+
+        #button:hover {
+            background-color: #0000ff;
+            color: #ffffff;
+        }
+
+        /*A div pai e h1 filho, ou seja, dentro da div temos um h1 que será modificado.*/
+        div > h1 {
+            display: none;
+            background-color: #0000ff;
+            color: #ffffff;
+            text-align: center;
+            width: 16em;
+            border-radius: .2em;
+        }
+
+        div:hover > h1 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Passe o mouse encima do botão</h1>
+    <div>
+        <input type="button" value="Passe o mouse aqui" id="button">
+        <h1>Parabéns, você está indo bem!</h1>
+    </div>
+</body>
+</html>
