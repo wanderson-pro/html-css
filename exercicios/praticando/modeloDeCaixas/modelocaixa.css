@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: .3em solid rgb(0, 184, 46);
+    margin: 0em;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
+/*CABEÇALHO > MENU*/
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E2040;
+    color: #F2F2F0;
+    border: .3em solid #ff0000;
+    margin: .15em;
+    height: 10em;
+}
+
+#cabecalho > h1 {
+    margin: 1em;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5em;
+    list-style: none;
+}
+
+.navegacao {
+    width: 5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    padding: .5em;
+    margin: .2em;
+    border: .15em solid #BFBFBD;
+}
+
+#principal {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: .3em solid #ff0000;
+    margin: .15em;
+}
+
+#secao {
+    width: 45em;
+    display: flex;
+    flex-wrap: wrap;
+    border: .3em solid #0026ff;
+    margin: 1em;
+    padding: .48em .48em 0;
+}
+
+.artigo {
+    border: .3em solid #00c8d6;
+    margin: -.3em -.3em 0 -.3em;
+    padding: 0 .5em 0 .5em;
+}
+
+.artigo2 {
+    display: flex;
+    border: .3em solid #00c8d6;
+    margin: .2em -.3em .15em -.3em;
+    padding: 0 .5em 0 .5em;
+}
+
+#periferico {
+    background-color: #ebebe8;
+    border: .3em solid #ffbb00;
+    margin: .15em -.35em .18em .5em;
+    padding: 0 .5em 0 .5em;
+}
+
+#periferico2 {
+    background-color: #ebebe8;
+    text-align: center;
+    width: 40em;
+    border: .3em solid #ffbb00;
+    margin: 1em;
+    padding: 0 .5em 0 .5em;
+}
+
+/*ROTAPE*/
+
+#rotape {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    border: .3em solid #ff0000;
+    margin: .2em .15em .2em .15em;
+}
