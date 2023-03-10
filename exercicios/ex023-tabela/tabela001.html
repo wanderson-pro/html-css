@@ -11,6 +11,7 @@
         }
 
         table {
+            height: 400px;
             width: 400px;
             /*collapse faz com que as bordas das celulas fiquem juntas.*/
             border-collapse: collapse;
@@ -18,22 +19,8 @@
 
         td {
             border: 1px solid #000;
-        }
-
-        .linha {
-            background-color: rgb(90, 255, 178);
-        }
-
-        .celula-a2 {
-            background-color: #ffff81;
-        }
-
-        .celula-b1 {
-            background-color: #ff6969;
-        }
-
-        .celula-c2 {
-            background-color: #5abdff;
+            vertical-align: top;/*Alinhamento vertical*/
+            text-align: right;/*Alinhamento horizontal*/
         }
     </style>
 </head>
@@ -50,20 +37,20 @@
     <table>
         <tr>
             <td>A1</td>
-            <td class="celula-b1">B1</td>
+            <td>B1</td>
             <td>C1</td>
         </tr>
         <tr>
-            <td class="celula-a2">A2</td>
+            <td>A2</td>
             <td>B2</td>
-            <td class="celula-c2">C2</td>
+            <td>C2</td>
         </tr>
         <tr>
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
