@@ -10,18 +10,39 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1 {
+            width: 500px;
+            text-align: center;
+        }
+
         table {
-            width: 350px;
+            width: 500px;
             border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: #e3f6fd;
+            color: #000000;
+            padding: 10px;
         }
 
         td, th {
             border: 1px solid #000;
             padding: 10px;
         }
+        /*Efeito zebrado: posso usar 2n ou even (Par) e 2n-1 ou odd (Impar)*/
+        tbody > tr:nth-child(odd) {
+            background-color: #e3f6fd;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: #abe5fd;
+        }
 
         thead, tfoot{
-            background-color: #808080;
+            background-color: #3f87a6;
             color: #fff; 
         }
 
@@ -35,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEADER
                 TR, TD, TH
             TBODY
@@ -44,10 +66,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:100px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,7 +185,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="number">207 883 699</td>
             </tr>
         </tfoot>
