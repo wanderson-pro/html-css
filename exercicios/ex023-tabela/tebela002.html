@@ -18,6 +18,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;/*Configuração para deixar o cabeçalho da tabela fixa na rolagem*/
         }
 
         caption {
@@ -31,6 +32,12 @@
         td, th {
             border: 1px solid #000;
             padding: 10px;
+        }
+
+        thead > tr > th { /*Cabeçalho fixo*/
+            position: sticky;
+            top: -1px;
+            background-color: #3f87a6;
         }
         /*Efeito zebrado: posso usar 2n ou even (Par) e 2n-1 ou odd (Impar)*/
         tbody > tr:nth-child(odd) {
@@ -190,5 +197,20 @@
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati nostrum maxime labore aut ab. Laboriosam dignissimos, perferendis similique nihil nemo tempore iusto. Numquam, sed? Ex aut consequatur officiis pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nihil est praesentium aliquam neque et minus ipsum amet modi, delectus adipisci. Rerum tempore nesciunt cum. Earum voluptatem vero eos quo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, aliquam? Dolor deserunt illum, natus error ipsum suscipit aperiam velit omnis cum eum. Ullam, atque inventore magni facere nam id esse?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil dolores, molestias voluptatibus inventore deleniti, cumque laboriosam et laudantium deserunt quas nesciunt totam debitis assumenda placeat, aliquam fugiat incidunt mollitia.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati nostrum maxime labore aut ab. Laboriosam dignissimos, perferendis similique nihil nemo tempore iusto. Numquam, sed? Ex aut consequatur officiis pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nihil est praesentium aliquam neque et minus ipsum amet modi, delectus adipisci. Rerum tempore nesciunt cum. Earum voluptatem vero eos quo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, aliquam? Dolor deserunt illum, natus error ipsum suscipit aperiam velit omnis cum eum. Ullam, atque inventore magni facere nam id esse?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil dolores, molestias voluptatibus inventore deleniti, cumque laboriosam et laudantium deserunt quas nesciunt totam debitis assumenda placeat, aliquam fugiat incidunt mollitia.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati nostrum maxime labore aut ab. Laboriosam dignissimos, perferendis similique nihil nemo tempore iusto. Numquam, sed? Ex aut consequatur officiis pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nihil est praesentium aliquam neque et minus ipsum amet modi, delectus adipisci. Rerum tempore nesciunt cum. Earum voluptatem vero eos quo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, aliquam? Dolor deserunt illum, natus error ipsum suscipit aperiam velit omnis cum eum. Ullam, atque inventore magni facere nam id esse?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil dolores, molestias voluptatibus inventore deleniti, cumque laboriosam et laudantium deserunt quas nesciunt totam debitis assumenda placeat, aliquam fugiat incidunt mollitia.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati nostrum maxime labore aut ab. Laboriosam dignissimos, perferendis similique nihil nemo tempore iusto. Numquam, sed? Ex aut consequatur officiis pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nihil est praesentium aliquam neque et minus ipsum amet modi, delectus adipisci. Rerum tempore nesciunt cum. Earum voluptatem vero eos quo? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, aliquam? Dolor deserunt illum, natus error ipsum suscipit aperiam velit omnis cum eum. Ullam, atque inventore magni facere nam id esse?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil dolores, molestias voluptatibus inventore deleniti, cumque laboriosam et laudantium deserunt quas nesciunt totam debitis assumenda placeat, aliquam fugiat incidunt mollitia.
+    </p>
 </body>
 </html>
