@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="post" autocomplete="on">
+        <p>
+            <label for="estados">Estado</label>
+            <select name="estado" id="estados">
+                <option value="" selected>Seu Estado</option>
+
+                <optgroup label="Região Nordeste">
+                    <option value="SE">Sergipe</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprofissao">Profissão</label>
+            <input type="text" name="proficao" id="iprofissao" list="lstProfissoes">
+            
+            <datalist id="lstProfissoes">
+                <option>Administrador</option>
+                <option>Programador</option>
+                <option>Professor</option>
+                <option>Dentista</option>
+                <option>Chefe De Pista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msm">Mensagem: </label><br>
+            <textarea name="text" id="txtarea" cols="30" rows="5" placeholder="Digite aqui sua mensagem"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
