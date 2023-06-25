@@ -7,7 +7,7 @@
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
-    
+
     html, body {
         height: 100vh;
         width: 100vw;
@@ -15,7 +15,7 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-    
+
     h1 {
         color: #fff;
         text-shadow: 2px 2px 0 #101b6b;
