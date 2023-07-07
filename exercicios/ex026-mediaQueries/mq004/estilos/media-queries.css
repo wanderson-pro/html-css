@@ -2,3 +2,80 @@
 
 /*Todas as demais mídias*/
 
+/*Typical Device Breakpoints (Pontos de interrupção típicos do dispositivo)
+
+Smartphones: até 600px.
+Retrato tablets e Smartphones grandes: 600px e mais.
+Paisagem tablets: 768px e mais.
+Laptops, Desktops: 992px e mais.
+Grandes laptops, Desktops e TVs: 1200px e mais.
+
+*/
+
+@media print {
+    html {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background: url("../imagens/back-print.jpg");
+    }
+
+    main {
+        width: 90vw;
+        margin-top: 40px;
+        border: 2px solid #000000;
+    }
+
+    main::after {
+        content: 'Versão para impressora.';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: #000000;
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #impressora { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 768px) {
+   body {
+    background: url("../imagens/back-tablet.jpg");
+   }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+    #impressora { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 992px) {
+   body {
+    background: url("../imagens/back-pc.jpg");
+   }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #impressora { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) {
+   body {
+    background: url("../imagens/back-tv.jpg");
+   }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #impressora { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
