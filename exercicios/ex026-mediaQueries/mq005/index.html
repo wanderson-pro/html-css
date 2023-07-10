@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="screen">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
-            <ul id="menu">
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="menu">
+            <ul>
                 <li class="lista"><a href="#">Opção 1</a></li>
                 <li class="lista"><a href="#">Opção 2</a></li>
                 <li class="lista"><a href="#">Opção 3</a></li>
@@ -30,5 +33,30 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas sapiente corporis, voluptatum reprehenderit totam nulla tempora, aliquid fuga magnam maxime iusto earum officiis minima quidem repellat id. Officia, autem similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eum ipsa corrupti. Similique expedita praesentium beatae, omnis recusandae, commodi quas provident ex repellat eos aliquam quos, quibusdam delectus molestias libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iusto autem cupiditate aliquid perspiciatis mollitia facere consequatur dolore sequi quam, delectus rem nesciunt facilis corporis, fugit doloribus minus maiores repellendus!</p>
         </article>
     </main>
+    <script>
+
+        //Versão tradicional
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+
+        /*Versão recomendada
+
+        const clickMenu = document.querySelector('#burguer').addEventListener('click', () => {
+            
+            let menu = document.querySelector('#menu')
+            
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        })
+        */
+    </script>
 </body>
 </html>
